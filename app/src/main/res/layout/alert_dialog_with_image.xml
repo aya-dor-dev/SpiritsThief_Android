@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        tools:src="@drawable/ic_beg"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        android:layout_centerHorizontal="true"
+        android:translationZ="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="120dp"
+        android:background="@color/white"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="-48dp"
+        android:paddingTop="60dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/missing_barcode_request"
+            style="@style/AlertDialogMessageStyle"/>
+
+        <LinearLayout
+            android:id="@+id/actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="36dp">
+
+            <TextView
+                android:id="@+id/negative_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/not_now"
+                style="@style/AlertDialogNegativeActionStyle"/>
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/positive_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/sure"
+                style="@style/AlertDialogPositiveActionStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

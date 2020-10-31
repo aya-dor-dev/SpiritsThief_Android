@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bottles_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/error_message"
+        style="@style/BigInfoStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="@string/wish_list_empty" />
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/items_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="@dimen/bottle_card_height">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/bottles_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"/>-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progress"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"/>-->
+
+    <!--</FrameLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/error_message"-->
+        <!--style="@style/BigInfoStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="32dp"-->
+        <!--android:text="@string/wish_list_empty"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/bottle_info_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_below="@id/items_container">-->
+
+
+        <!--<com.spiritsthief.views.BottleInfoView-->
+            <!--android:id="@+id/bottle_info"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</ScrollView>-->
+
+</RelativeLayout>

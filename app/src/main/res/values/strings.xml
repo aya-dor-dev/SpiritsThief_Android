@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Spirit Thief</string>
+
+    <string name="bottle_info_avg_price">Lowest price: %s</string>
+    <string name="bottle_info_cask">Cask: %s</string>
+    <string name="nas">NAS</string>
+    <string name="not_available">N/A</string>
+
+    <string name="search">Search</string>
+    <string name="search_hint">Brand, Bottler, Cask No…</string>
+    <string name="bottler">Bottler</string>
+
+    <string name="transition_bottle_image">transition_bottle_image</string>
+    <string name="share">Share</string>
+    <string name="cask_type">Cask Type</string>
+    <string name="cask_number">Cask Number</string>
+    <string name="bottled_by">Bottled By</string>
+    <string name="abv">ABV</string>
+    <string name="series">Series</string>
+    <string name="vintage">Vintage</string>
+    <string name="bottling_date">Bottling Date</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">Barcode cannot be scanned because it does not have the camera permission</string>
+    <string name="low_storage_error">Barcode scanner dependencies cannot be downloaded due to low device storage</string>
+
+    <!-- Shortcuts -->
+    <string name="country">Country</string>
+    <string name="region">Region</string>
+    <string name="size">Size</string>
+    <string name="age">Age</string>
+    <string name="wish_list">Wish List</string>
+
+    <string name="wish_list_added">Bottle added to Wish List</string>
+    <string name="wish_list_removed">Bottle removed from Wish List</string>
+    <string name="collection_added">Bottle added to Collection</string>
+    <string name="collection_removed">Bottle removed from Collection</string>
+    <string name="wish_list_empty">Your Wish List is currently empty.\nSearch for bottles and add them to your Wish List!</string>
+    <string name="collection_empty">Your Collection is currently empty.\nSearch for bottles and add them to your Collection!</string>
+    <string name="bottle_size">%s ml</string>
+
+    <string name="daily_deals">Daily Deals</string>
+    <!--<string name="moBrowseMoreMore</string>-->
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="brand">Brand</string>
+    <string name="matured_finished_in">Matured/Finished In</string>
+    <string name="including_nas">Including NAS</string>
+    <string name="price_range">$%1d - $%2d</string>
+    <string name="price_over">Over %s</string>
+    <string name="price_under">Under %s</string>
+    <string name="abv_over">Over %d</string>
+    <string name="abv_under">Under %d</string>
+    <string name="price">Price</string>
+    <string name="only_cask_strength">Only Cask Strength</string>
+    <string name="only_single_cask">Only Single Cask</string>
+    <string name="bottling_year">Bottling Year</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="results_count">%d Bottles</string>
+    <string name="loading_bottle">Loading bottle...</string>
+    <string name="done">DONE</string>
+    <string name="reset">RESET</string>
+    <string name="any">Any</string>
+    <string name="server_error_message">Oops!\nSeems like our servers are experiencing some issues right now.\nPlease try again later.</string>
+    <string name="search_zero_results">Wow! Even <b>WE</b> couldn\'t find any bottle to match your criteria.\nTry re-fining your search.</string>
+    <string name="filter_after_date">After %d</string>
+    <string name="filter_before_date">Before %d</string>
+    <string name="filter_value_more">+%d More</string>
+    <string name="sort_name_ascending">A..Z</string>
+    <string name="sort_name_descending">Z..A</string>
+    <string name="sort_average_price_ascending">Cheapest</string>
+    <string name="sort_average_price_descending">Most Expensive</string>
+    <string name="age_ascending">Youngest</string>
+    <string name="age_descending">Oldest</string>
+    <string name="currency">Currency</string>
+    <string name="currency_usd">USD</string>
+    <string name="currency_gbp">GBP</string>
+    <string name="currency_eur">EUR</string>
+    <string name="currency_usd_symbol">\u0024</string>
+    <string name="currency_gbp_symbol">\u00A3</string>
+    <string name="currency_eur_symbol">\u20AC</string>
+    <string name="none">None</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub-Category</string>
+    <string name="statistics">Statistics</string>
+    <string name="stats_bottles">Bottles</string>
+    <string name="stats_brands">Brands</string>
+    <string name="stats_bottlers">Bottlers</string>
+    <string name="stats_stores">Stores</string>
+    <string name="stats_link">Links</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about">About</string>
+    <string name="busness_owners">Business Owners</string>
+    <string name="businesS_owners_subtitle">Want to see your store here?</string>
+    <string name="delivery_country">Delivery Country</string>
+    <string name="oncoarding_choose_currency">In which currency would you prefer to see prices?</string>
+    <string name="onboarding_currency_subtitle">* Prices that are not shown in their original currency are not exact\n* You can always change this from the settings</string>
+    <string name="onboarding_delivery_country">Where would you like your bottles to be sent to?</string>
+    <string name="onboarding_delivery_countrt_subtitle">We will do our best to show you only stores that will deliver to you!</string>
+    <string name="cask_size">Cask Size</string>
+    <string name="wood_type">Wood Type</string>
+    <string name="cask_refill">Cask Refill</string>
+    <string name="stores_statistics">Stores Statistics</string>
+
+    <string name="filter_title_category">Category</string>
+    <string name="filter_title_sub_category">Sub-Category</string>
+    <string name="filter_title_country">Country</string>
+    <string name="filter_title_region">Region</string>
+    <string name="filter_title_brand">Brand</string>
+    <string name="filter_title_bottler">Bottled By</string>
+    <string name="filter_only_verified">Only Verified</string>
+    <string name="filter_title_price">Price</string>
+    <string name="filter_title_abv">ABV</string>
+    <string name="filter_title_age">Age</string>
+    <string name="filter_title_vintage">Vintage</string>
+    <string name="filter_title_bottling_year">Bottling Year</string>
+    <string name="filter_title_matured_in">Matured/Finished In</string>
+    <string name="filter_title_cask_size">Cask Size</string>
+    <string name="filter_title_wood_type">Wood Type</string>
+    <string name="filter_title_cask_refill">Cask Refill</string>
+
+    <string name="filter_empty_value">-</string>
+    <string name="filter_less_than">Less than %s%d%s</string>
+    <string name="filter_more_than">More than %s%d%s</string>
+    <string name="filter_before">Before %s%d%s</string>
+    <string name="filter_after">After %s%d%s</string>
+    <string name="filter_exactly">%s%d%s Exactly</string>
+
+
+    <string name="GO">GO</string>
+    <string name="verified_message">Item seen in stock in the past 7 days; Price exc. Tax</string>
+    <string name="unverified_message">Store has not been scanned in the past 7 days</string>
+    <string name="sold_out_message">Item sold out</string>
+    <string name="sold_out">SOLD OUT</string>
+    <string name="get_it_from">Get it from</string>
+    <string name="verified">Available</string>
+    <string name="unverified">Availability Unknown</string>
+    <string name="onboarding_availability_title">Product Availability</string>
+    <string name="onboarding_availability_message">We are doing our absolute best to make sure prices and availability you see are up-to-date</string>
+    <string name="onboarding_sold_out_message">Item sold out and is no longer in stock</string>
+    <string name="my_collection">My Collection</string>
+    <string name="settings">Settings</string>
+    <string name="clear">Clear</string>
+    <string name="collection">Collection</string>
+
+    <string name="missing_barcode_request">We have not been able to find this bottle\'s barcode.\nWill you help us by scanning it?</string>
+    <string name="not_now">Not now</string>
+    <string name="sure">Sure!</string>
+    <string name="updating_barcode">Updating Barcode...</string>
+    <string name="thank_you">Thank You!</string>
+
+    <string-array name="sorting_options">
+        <item>A..Z</item>
+        <item>Z..A</item>
+        <item>Cheapest</item>
+        <item>Most Expensive</item>
+        <item>Youngest</item>
+        <item>Oldest</item>
+    </string-array>
+
+</resources>

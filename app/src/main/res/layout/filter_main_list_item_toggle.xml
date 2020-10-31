@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/filter_list_item_height"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <Switch
+        android:id="@+id/toggle"
+        style="@style/FilterItemTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Brand"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/clouds"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

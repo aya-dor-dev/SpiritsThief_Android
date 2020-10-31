@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/DropDownTextStyle"
+    android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:ellipsize="marquee"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="Gordon"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="@color/white"/>

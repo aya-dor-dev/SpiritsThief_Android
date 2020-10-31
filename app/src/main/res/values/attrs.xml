@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TileView">
+        <attr name="data" format="string" localization="suggested" />
+        <attr name="title" format="string" localization="suggested" />
+        <attr name="square" format="boolean" />
+        <attr name="editable" format="boolean" />
+        <attr name="by_height" format="boolean"/>
+        <attr name="icon" format="reference"/>
+        <attr name="icon_tint" format="reference"/>
+        <attr name="single_line" format="boolean"/>
+    </declare-styleable>
+</resources>

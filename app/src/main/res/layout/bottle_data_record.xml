@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/data_record_height"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/FilterSubitleStyle"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Age"
+        android:gravity="center_vertical"
+        android:textColor="@color/light_gray"/>
+
+    <TextView android:id="@+id/subtitle"
+        style="@style/FilterTitleStyle"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:lines="1"
+        android:maxLines="1"
+        tools:text="18YO"
+        android:gravity="center_vertical"/>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/clouds"/>-->
+
+</LinearLayout>

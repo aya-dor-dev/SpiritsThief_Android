@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="@dimen/deal_item_height"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    android:backgroundTint="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/header">
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_corner_bg"
+                android:backgroundTint="@color/green"
+                tools:text="-21%"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+            android:id="@+id/name"
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="17sp"
+            tools:text="Name"
+                android:layout_toLeftOf="@id/discount"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/deal_data_frame"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingLeft="38dp">
+
+            <TextView
+                android:id="@+id/was"
+                style="@style/DealOldPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card"
+                android:gravity="right"
+                android:text="$1000" />
+
+            <TextView
+                android:id="@+id/now"
+                style="@style/DealPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/was"
+                android:layout_marginLeft="24dp"
+                android:gravity="left"
+                android:text="$1000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_data_frame"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@id/deal_data_frame"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.spiritsthief.views.SquareImageView
+                android:id="@+id/store_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:by_height="true" />
+
+            <TextView
+                android:id="@+id/store_name"
+                style="@style/TitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center_vertical"
+                tools:text="Name" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/store_data_frame"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/clouds" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/clouds" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/store_data_frame"
+            android:layout_below="@id/header"
+            android:orientation="horizontal">
+
+            <com.spiritsthief.views.SquareImageView
+                android:id="@+id/bottle_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                app:by_height="true"
+                tools:src="@drawable/ic_bottle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/style"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_light"
+                    android:maxLines="1"
+                    tools:text="Red wine finished" />
+
+                <TextView
+                    android:id="@+id/bottler"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_light"
+                    android:maxLines="1"
+                    tools:text="Signatory" />
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_light"
+                    android:maxLines="1"
+                    tools:text="Style" />
+
+                <TextView
+                    android:id="@+id/cask"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_light"
+                    android:maxLines="1"
+                    tools:text="Style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

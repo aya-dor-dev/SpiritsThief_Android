@@ -1,0 +1,329 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!--<item name="android:windowLightStatusBar" tools:targetApi="23">true</item>-->
+    </style>
+
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:subtitleTextAppearance">@style/ToolbarSubtitleTitleTextAppearance</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="ErrorTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="BottomSheetTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="SortOptionStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:background">@drawable/sort_option_background</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+
+    <style name="SortOptionSelectedStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:background">@drawable/sort_option_background</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+
+    <style name="FilterItemTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:background">@drawable/sort_option_background</item>
+    </style>
+
+    <style name="FilterItemValueStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:background">@drawable/sort_option_background</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+    </style>
+
+    <style name="ViewBottleActionStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CollectionBottleNameTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AlertDialogMessageStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AlertDialogPositiveActionStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_rectangle_button_bg</item>
+        <item name="android:backgroundTint">@color/green</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="AlertDialogNegativeActionStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="BottleListItemNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:background">@drawable/sort_option_background</item>
+    </style>
+
+    <style name="BottleListItemDataStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato_light</item>
+        <item name="android:background">@drawable/sort_option_background</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+    </style>
+
+    <style name="ToolbarSubtitleTitleTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SectionTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="SectionSubtitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="InfoStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="BottleInfoDataStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <style name="BottleInfoEditableDataStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:backgroundTint">@color/dark_gray</item>
+    </style>
+
+    <style name="AttributeDataStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <style name="AttributeTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="CardTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="DealOldPrice" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+    </style>
+
+    <style name="DealPrice" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
+    </style>
+
+    <style name="CardSubtitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BigInfoStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DropDownTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="PriceStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NumberPickerText">
+        <item name="android:textSize">22dp</item>
+        <item name="colorControlNormal">@color/light_gray</item>
+    </style>
+
+
+    <style name="FilterTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:backgroundTint">@color/dark_gray</item>
+    </style>
+
+    <style name="ListHeaderStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="FilterSubitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="FilterCheckboxStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="OnBoardingCardTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="OnBoardingCardMessageStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

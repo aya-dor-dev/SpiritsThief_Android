@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/gbp"
+        style="@style/FilterTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:button="@drawable/custom_radio_button_drawable"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:padding="12dp"
+        android:text="@string/currency_gbp"
+        android:tag="0"/>
+
+    <RadioButton
+        android:id="@+id/eur"
+        style="@style/FilterTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:button="@drawable/custom_radio_button_drawable"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:padding="12dp"
+        android:text="@string/currency_eur"
+        android:tag="1"/>
+
+    <RadioButton
+        android:id="@+id/usd"
+        style="@style/FilterTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:button="@drawable/custom_radio_button_drawable"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:padding="12dp"
+        android:text="@string/currency_usd"
+        android:tag="2"/>
+
+</RadioGroup>

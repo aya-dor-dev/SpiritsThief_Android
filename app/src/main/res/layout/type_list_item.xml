@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawablePadding="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/category_bg_unselected"
+    android:gravity="center"
+    android:elevation="3dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    tools:text="Whisky"
+    android:textSize="18sp"
+    android:fontFamily="@font/montserrat"
+    android:textColor="@color/gray"
+    android:drawableTint="@color/gray"
+    tools:drawableLeft="@drawable/ic_category_whisky"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+</TextView>

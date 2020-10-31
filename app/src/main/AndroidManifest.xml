@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spiritsthief">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SpiritsThiefApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="www.thespiritthief.com"
+                    android:pathPrefix="/bottle" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="thespiritthief.com"
+                    android:pathPrefix="/bottle" />
+            </intent-filter>
+            <!--<meta-data-->
+            <!--android:name="android.app.shortcuts"-->
+            <!--android:resource="@xml/shortcuts" />-->
+        </activity>
+        <activity
+            android:name=".ui.ui.main.MainActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.spiritsthief.ui.ui.filter.FilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".ui.viewbottle.ViewBottleActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.ViewInStoreActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.scanner.barcode.BarcodeCaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.scanner.ocr.OcrCaptureActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ui.viewbottle.ViewFullSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.onboarding.OnBoarding" />
+        <activity android:name=".ui.main.wishlist.WishListActivity" />
+    </application>
+
+</manifest>

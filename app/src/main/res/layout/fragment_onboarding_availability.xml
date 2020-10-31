@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingTop="32dp"
+    android:paddingRight="32dp"
+    android:paddingBottom="16dp"
+    tools:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="@string/onboarding_availability_title" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:lines="4"
+        android:maxLines="4"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:text="@string/onboarding_availability_message" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorPrimary"
+        tools:text="Finish" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/next"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="18"
+        android:background="@android:color/transparent">
+
+        <com.spiritsthief.ui.onboarding.AvailabiliyCard
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            app:data="@string/verified_message"
+            app:icon="@drawable/ic_verified"
+            app:title="@string/verified" />
+
+        <com.spiritsthief.ui.onboarding.AvailabiliyCard
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            app:data="@string/unverified_message"
+            app:icon="@drawable/ic_unverified"
+            app:title="@string/unverified" />
+
+        <com.spiritsthief.ui.onboarding.AvailabiliyCard
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            app:data="@string/onboarding_sold_out_message"
+            app:icon="@drawable/ic_sold_out"
+            app:title="@string/sold_out" />
+
+    </LinearLayout>
+
+</RelativeLayout>

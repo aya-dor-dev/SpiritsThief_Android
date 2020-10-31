@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="4dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="112dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="140dp" />
+
+    <com.spiritsthief.views.SquareCardView
+        android:id="@+id/image_card"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transition_bottle_image"
+        app:by_height="true"
+        app:cardElevation="0dp"
+        app:contentPadding="4dp">
+
+        <com.spiritsthief.views.SquareImageView
+            android:id="@+id/bottleImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_bottle_place_holder"
+            app:by_height="true"/>
+
+    </com.spiritsthief.views.SquareCardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintLeft_toRightOf="@+id/image_card"
+        app:layout_constraintRight_toRightOf="@id/parent"
+        app:layout_constraintTop_toTopOf="@id/parent">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/BottleListItemNameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/style"
+            style="@style/BottleListItemDataStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="Style" />
+
+        <TextView
+            android:id="@+id/bottler"
+            style="@style/BottleListItemDataStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="Bottler" />
+
+        <TextView
+            android:id="@+id/cask"
+            style="@style/BottleListItemDataStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="Cask" />
+
+        <TextView
+            android:id="@+id/avg_price"
+            style="@style/BottleListItemDataStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="Stores" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/abv"
+                style="@style/BottleListItemDataStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:maxLines="1"
+                tools:text="Stores" />
+
+            <TextView
+                android:id="@+id/age"
+                style="@style/BottleListItemDataStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:maxLines="1"
+                tools:text="13yo" />
+
+            <TextView
+                android:id="@+id/size"
+                style="@style/BottleListItemDataStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:maxLines="1"
+                tools:text="Stores" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:background="@color/clouds"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintRight_toRightOf="@id/guideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="32dp"
+    tools:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:lines="3"
+        android:maxLines="3"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:text="@string/oncoarding_choose_currency" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:lines="3"
+        android:maxLines="3"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        tools:text="@string/onboarding_currency_subtitle" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorPrimary"
+        tools:text="Finish" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/next"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        app:cardElevation="3dp"
+        app:contentPadding="6dp">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

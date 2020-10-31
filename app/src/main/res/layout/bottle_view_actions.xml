@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_rectangle"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:elevation="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <com.spiritsthief.views.BottleViewAction
+        android:id="@+id/share"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        app:title="@string/share"
+        app:icon="@drawable/ic_share_white_24dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#ffffff" />
+
+    <com.spiritsthief.views.BottleViewAction
+        android:id="@+id/collection"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        app:title="@string/collection"
+        app:icon="@drawable/ic_collection_small"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#ffffff" />
+
+    <com.spiritsthief.views.BottleViewAction
+        android:id="@+id/wish_list"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        app:title="@string/wish_list"
+        app:icon="@drawable/ic_favorite_border_red_24dp" />
+
+
+</LinearLayout>

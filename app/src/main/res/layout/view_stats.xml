@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.spiritsthief.views.BottleDataRecord
+            android:id="@+id/bottles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle="3222"
+            app:title="@string/stats_bottles" />
+
+        <com.spiritsthief.views.BottleDataRecord
+            android:id="@+id/brands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle="3222"
+            app:title="@string/stats_brands" />
+
+        <com.spiritsthief.views.BottleDataRecord
+            android:id="@+id/bottlers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle="3222"
+            app:title="@string/stats_bottlers" />
+
+        <com.spiritsthief.views.BottleDataRecord
+            android:id="@+id/stores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle="3222"
+            app:title="@string/stats_stores" />
+
+        <com.spiritsthief.views.BottleDataRecord
+            android:id="@+id/links"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:subtitle="3222"
+            app:title="@string/stats_link" />
+
+    </LinearLayout>
+
+</RelativeLayout>

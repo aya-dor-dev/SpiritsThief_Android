@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/clouds">
+
+    <LinearLayout
+        android:id="@+id/advanced_options_frame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/category"
+            android:visibility="gone"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/subcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/sub_category"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/countries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/country"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/regions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/region"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/brand"/>
+
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/bottlers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/bottled_by"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/price"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/abv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/abv"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/age"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/distillation_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/vintage"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/bottling_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/bottling_year"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/cask_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/matured_finished_in"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/cask_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/cask_size"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/cask_wood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/wood_type"/>
+
+        <com.spiritsthief.views.DrawerItem
+            android:id="@+id/cask_refill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/cask_refill"/>
+
+        <CheckBox
+            style="@style/FilterTitleStyle"
+            android:checked="true"
+            android:id="@+id/including_nas"
+            android:layout_height="@dimen/filter_item_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:text="@string/including_nas"
+            android:visibility="gone"/>
+
+        <CheckBox
+            style="@style/FilterTitleStyle"
+            android:checked="false"
+            android:id="@+id/only_cask_strength"
+            android:layout_height="@dimen/filter_item_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:text="@string/only_cask_strength"
+            android:visibility="gone"/>
+
+        <CheckBox
+            style="@style/FilterTitleStyle"
+            android:checked="false"
+            android:id="@+id/only_single_cask"
+            android:layout_height="@dimen/filter_item_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:text="@string/only_single_cask"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/reset"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/red"
+            android:layout_gravity="center_horizontal"
+            android:background="?selectableItemBackground"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

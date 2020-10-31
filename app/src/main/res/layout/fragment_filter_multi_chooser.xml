@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:hint="@string/filter"
+        android:drawableRight="@drawable/ic_filter_list_light_gray_24dp"
+        android:background="@color/clouds"
+        android:elevation="3dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+    <ProgressBar android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/filter"/>
+
+    <TextView
+        android:id="@+id/error"
+        style="@style/BigInfoStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/server_error_message"
+        android:padding="16dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

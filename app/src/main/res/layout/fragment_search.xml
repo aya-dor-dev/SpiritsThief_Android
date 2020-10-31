@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.spiritsthief.ui.ui.main.MainActivity2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll"
+                app:titleTextAppearance="@style/ToolbarTitleTextAppearance">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="?attr/colorPrimary" />
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/fade_out_overlay" />
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/fade_out_overlay"
+                        android:rotation="180" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_search_frame" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageButton
+                    android:id="@+id/filter"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/scan_barcode"
+                    android:background="?selectableItemBackground"
+                    android:src="@drawable/ic_filter"
+                    android:tint="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/sort"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/filter"
+                    android:background="?selectableItemBackground"
+                    android:src="@drawable/ic_sort"
+                    android:tint="@color/white" />
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/count"
+                    style="@style/BottleInfoEditableDataStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/sort"
+                    android:fontFamily="@font/nunito_bold"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    tools:text="222 Bottles" />
+
+                <TextView
+                    android:id="@+id/filter_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignTop="@id/filter"
+                    android:layout_alignEnd="@id/filter"
+                    android:layout_margin="6dp"
+                    android:alpha="0"
+                    android:background="@drawable/rounded_rectangle"
+                    android:elevation="6dp"
+                    android:gravity="center"
+                    android:minWidth="18dp"
+                    android:src="@drawable/ic_funnel"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:tint="@color/white"
+                    app:layout_anchor="@id/filter"
+                    app:layout_anchorGravity="right"
+                    tools:text="5" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/bottles_list_container"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize"
+        android:translationZ="9999dp"
+        app:behavior_hideable="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <View
+            android:id="@+id/card_shaddow"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_shaddow" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_shaddow"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bottom_sheet_title"
+                        style="@style/BottomSheetTitle"
+                        android:text="Sort" />
+
+                    <ImageButton
+                        android:id="@+id/close_bottom_sheet"
+                        android:layout_width="?android:actionBarSize"
+                        android:layout_height="?android:actionBarSize"
+                        android:background="?selectableItemBackground"
+                        android:src="@drawable/ic_close_black_24dp"
+                        android:tint="@color/dark_gray"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/bottom_sheet_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

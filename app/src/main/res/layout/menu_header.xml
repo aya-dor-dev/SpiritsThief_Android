@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/primary_gradient"
+    android:src="@drawable/logo"
+    android:elevation="4dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_cover"/>
+
+    <com.spiritsthief.views.SquareImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:by_height="true"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:src="@drawable/logo"/>
+
+
+</RelativeLayout>
